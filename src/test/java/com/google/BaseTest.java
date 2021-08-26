@@ -1,27 +1,28 @@
 package com.google;
 
-import org.junit.jupiter.api.AfterAll;
+import Steps.Steps;
+import driver.WebDriverManager;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-
-import java.util.concurrent.TimeUnit;
 
 public class BaseTest {
 
     protected WebDriver chromeDriver;
+    protected WebDriver ffoxDriver;
+    protected WebDriver operaDriver;
+    protected Steps steps;
 
     @BeforeEach
     public void beforeEach() {
-        System.setProperty("webdriver.chrome.driver", System.getenv("CHROME_DRIVER"));
-        chromeDriver = new ChromeDriver();
-        chromeDriver.manage().window().maximize();
-        chromeDriver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        WebDriverManager.initOperaDriver();
+        operaDriver = WebDriverManager.getCurrentDriver();
+        operaDriver.manage().window().maximize();
+        steps = new Steps(operaDriver);
     }
 
     @AfterEach
-    public void afterEach(){
-       // chromeDriver.quit();
+    public void afterEach() {
+      //  WebDriverManager.quitCurrentDriver();
     }
 }

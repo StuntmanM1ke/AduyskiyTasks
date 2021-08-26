@@ -15,10 +15,10 @@ public class BaseTest {
 
     @BeforeEach
     public void beforeEach() {
-        WebDriverManager.initOperaDriver();
-        operaDriver = WebDriverManager.getCurrentDriver();
-        operaDriver.manage().window().maximize();
-        steps = new Steps(operaDriver);
+        WebDriverManager.initChrome();
+        chromeDriver = WebDriverManager.getCurrentDriver();
+        chromeDriver.manage().window().maximize();
+        steps = new Steps(chromeDriver);
     }
 
     @AfterEach

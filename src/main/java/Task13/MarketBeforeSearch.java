@@ -23,8 +23,8 @@ public class MarketBeforeSearch {
     private WebElement LaptopFilter;
     private WebElement hpPoint;
     private WebElement lenovoPoint;
-    private WebElement showSmthg = driver.findElement(By.xpath("//*[@class='vLDMf']"));
-    private WebElement showTwelve = driver.findElement(By.xpath("//*[@class='_1KpjX _35Paz _3a1jD']"));
+//    private WebElement showSmthg = driver.findElement(By.xpath("//*[@class='vLDMf']"));
+  //  private WebElement showTwelve = driver.findElement(By.xpath("//*[@class='_1KpjX _35Paz _3a1jD']"));
 
 
     public void setAllFilters() {

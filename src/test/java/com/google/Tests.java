@@ -111,8 +111,8 @@ public class Tests extends BaseTest {
     public void yandexMarketForTask13() {
 //    steps.openYandex();
 //    steps.goMarket();
-//    chromeDriver.manage().timeouts().implicitlyWait(Constants.DEFAULT_TIMEOUT, TimeUnit.SECONDS);
-        operaDriver.get("https://market.yandex.ru/?clid=505&utm_source=main_stripe_big&src_pof=505&utm_source_service=morda");
+    chromeDriver.manage().timeouts().implicitlyWait(Constants.DEFAULT_TIMEOUT, TimeUnit.SECONDS);
+        chromeDriver.get("https://market.yandex.ru/?clid=505&utm_source=main_stripe_big&src_pof=505&utm_source_service=morda");
         steps.filters();
     }
 }

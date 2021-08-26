@@ -14,10 +14,22 @@
         <seleniumhq.selenium>3.141.59</seleniumhq.selenium>
         <aspectj.version>1.9.4</aspectj.version>
         <allure.version>2.13.0</allure.version>
+        <slf4j.version>2.0.0-alpha2</slf4j.version>
     </properties>
 
 
     <dependencies>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>${slf4j.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>${slf4j.version}</version>
+        </dependency>
         <!-- Test API(s) -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
@@ -51,6 +63,13 @@
             <groupId>io.qameta.allure</groupId>
             <artifactId>allure-junit5</artifactId>
             <version>${qameta.allure}</version>
+        </dependency>
+
+        <!--Для скринов-->
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.4</version>
         </dependency>
     </dependencies>
 

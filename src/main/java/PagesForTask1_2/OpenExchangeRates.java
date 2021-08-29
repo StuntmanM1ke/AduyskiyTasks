@@ -1,4 +1,4 @@
-package PagesForTask12;
+package PagesForTask1_2;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

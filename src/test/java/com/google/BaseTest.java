@@ -1,10 +1,13 @@
 package com.google;
 
+import Helpers.Constants;
 import Steps.Steps;
 import driver.WebDriverManager;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.WebDriver;
+
+import java.util.concurrent.TimeUnit;
 
 public class BaseTest {
 
@@ -15,10 +18,11 @@ public class BaseTest {
 
     @BeforeEach
     public void beforeEach() {
-        WebDriverManager.initOperaDriver();
-        operaDriver = WebDriverManager.getCurrentDriver();
-        operaDriver.manage().window().maximize();
-        steps = new Steps(operaDriver);
+        WebDriverManager.initChrome();
+        chromeDriver = WebDriverManager.getCurrentDriver();
+        chromeDriver.manage().window().maximize();
+        chromeDriver.manage().timeouts().implicitlyWait(Constants.DEFAULT_TIMEOUT, TimeUnit.SECONDS);
+        steps = new Steps(chromeDriver);
     }
 
     @AfterEach

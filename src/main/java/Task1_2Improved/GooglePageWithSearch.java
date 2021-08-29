@@ -1,4 +1,4 @@
-package Task12Improved;
+package Task1_2Improved;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

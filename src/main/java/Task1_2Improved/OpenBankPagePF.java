@@ -1,5 +1,7 @@
-package Task12Improved;
+package Task1_2Improved;
 
+import ForPageFactory.FieldName;
+import ForPageFactory.Page;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -11,7 +13,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class OpenBankPagePF {
+public class OpenBankPagePF implements Page {
+    @FieldName("Курс обмена")
     @FindBy(xpath = "//*[@class='main-page-exchange main-page-info__card']")
     private WebElement exchangeRates;
     @FindAll(@FindBy(xpath = ".//tbody/tr[contains(@class,'header')]/td"))
@@ -37,6 +40,7 @@ public class OpenBankPagePF {
         this.webDriver = webDriver;
         if (!webDriver.getTitle().contains("открытие")) {
             webDriver.get(mainURL);
+            initPage();
         }
     }
 
@@ -52,5 +56,10 @@ public class OpenBankPagePF {
             collectERates.add(collectRow);
         }
         return collectERates;
+    }
+
+    @Override
+    public boolean isPageLoaded() {
+        return true;
     }
 }

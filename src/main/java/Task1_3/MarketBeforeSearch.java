@@ -20,16 +20,16 @@ public class MarketBeforeSearch implements Page {
         this.driver = driver;
         if (driver.getTitle().contains("Яндекс.Маркет")) {
             computerFilter = driver.findElement(By.xpath("//span[contains(text(),'Компьютеры')]"));
-//
-//
+            electronics = driver.findElement(By.xpath("//span[contains(text(),'Электроника')]"));
         } else System.out.println("не перешел на вкладку");
     }
 
     @FieldName("Компьютеры")
     private WebElement computerFilter;
-
+    private WebElement electronics;
     private WebElement priceFieldFrom;
     private WebElement priceFieldTo;
+    private WebElement smartPhones;
 
     @FieldName("Ноутбуки")
     private WebElement laptopFilter;
@@ -53,13 +53,17 @@ public class MarketBeforeSearch implements Page {
 
     public void goToLaptop() {
         computerFilter.click();
-        driver.manage().timeouts().implicitlyWait(Constants.DEFAULT_TIMEOUT, TimeUnit.SECONDS);
-        laptopFilter = driver.findElement(By.xpath("/html/body/div[1]/div[5]/div/div/div[2]/div/div[2]/div/div/div/div[1]/div/div/div/div/div/div/div[1]/div[2]/ul/li[1]/div"));
-        if (PageUtils.isClickable(getElement("Ноутбуки")))
-            laptopFilter.click();
+        laptopFilter = driver.findElement(By.xpath("//a[contains(text(),'Ноутбуки') and @class='_2qvOO _2x2zB _9qbcy']"));
+        laptopFilter.click();
     }
 
-    public void setAllFilters() {
+    public void goToSmartphones() {
+        electronics.click();
+        smartPhones = driver.findElement(By.xpath("//a[contains(text(),'Смартфоны') and @class='_2qvOO _2x2zB _9qbcy']"));
+        smartPhones.click();
+    }
+
+    public void setAllFiltersLaptops() {
         setPrice("10000", "30000");
         hpPoint = driver.findElement(By.xpath("//span[@class = '_1o8_r' and contains(text(),'HP')]"));
         lenovoPoint = driver.findElement(By.xpath("//span[@class = '_1o8_r' and contains(text(),'Lenovo')]"));
@@ -82,10 +86,30 @@ public class MarketBeforeSearch implements Page {
     }
 
     public void searchFirstOne() {
-       searchField = driver.findElement(By.xpath("//input[@id='header-search']"));
-       searchButton = driver.findElement(By.xpath("//span[contains(text(),'Найти')]"));
-       searchField.sendKeys(results.get(0).getText());
-       searchButton.click();
+        searchField = driver.findElement(By.xpath("//input[@id='header-search']"));
+        searchButton = driver.findElement(By.xpath("//span[contains(text(),'Найти')]"));
+        searchField.sendKeys(results.get(0).getText());
+        searchButton.click();
+    }
+
+    public void setBrandFilter (String brandName) throws InterruptedException {
+        WebElement showAll = driver.findElement(By.xpath("//*[@class ='_1KpjX _2Wg9r']"));
+        showAll.click();
+        WebElement brandField = driver.findElement(By.xpath("//*[@class='_1JYTt']"));
+        brandField.sendKeys(brandName);
+        WebElement brandPoint = driver.findElement(By.xpath("//span[contains(text(), '"+ brandName + "') and @class='_1o8_r _17C4L']"));
+        Thread.sleep(3000);
+        brandPoint.click();
+    }
+
+    public List<WebElement> getBrandList() throws InterruptedException {
+        List<WebElement> list = getResults();
+        WebElement nextPage = driver.findElement(By.xpath("//a[contains(text(), 'Вперёд')]"));
+        while (nextPage.isDisplayed()){
+            nextPage.click();
+            Thread.sleep(3000);
+            list.addAll(getResults());
+        }return list;
     }
 
     @Override

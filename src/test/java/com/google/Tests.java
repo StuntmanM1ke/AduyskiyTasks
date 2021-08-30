@@ -108,12 +108,12 @@ public class Tests extends BaseTest {
     @Test
     public void yandexMarketForTask13() throws InterruptedException {
         steps.openYandex();
-        YandexBeforeMarket yandexBeforeMarket = new YandexBeforeMarket((ChromeDriver) chromeDriver);
+        YandexBeforeMarket yandexBeforeMarket = new YandexBeforeMarket(chromeDriver);
         steps.goMarket(yandexBeforeMarket);
         steps.switchTab();
         MarketBeforeSearch marketBeforeSearch = new MarketBeforeSearch(chromeDriver);
         steps.goToLaptops(marketBeforeSearch);
-        steps.filters(marketBeforeSearch);
+        steps.filtersLaptops(marketBeforeSearch);
         Thread.sleep(6000);
         steps.setRange(marketBeforeSearch);
         Thread.sleep(3000);
@@ -121,5 +121,21 @@ public class Tests extends BaseTest {
         steps.findFirstOne(marketBeforeSearch);
         MarketAfterSearch marketAfterSearch = new MarketAfterSearch(chromeDriver);
         steps.compareResults(marketAfterSearch, marketBeforeSearch);
+    }
+
+    @Test
+    public void yandexMarketForTask14() throws InterruptedException {
+        steps.openYandex();
+        YandexBeforeMarket yandexBeforeMarket = new YandexBeforeMarket(chromeDriver);
+        steps.goMarket(yandexBeforeMarket);
+        steps.switchTab();
+        MarketBeforeSearch marketBeforeSearch = new MarketBeforeSearch(chromeDriver);
+        steps.goToSmarts(marketBeforeSearch);
+        Thread.sleep(6000);
+        steps.brandFilters(marketBeforeSearch);
+        Thread.sleep(6000);
+        steps.setRange(marketBeforeSearch);
+        Thread.sleep(3000);
+        steps.checkBrandList(marketBeforeSearch);
     }
 }

@@ -2,44 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="926d24ef-ce3e-49a3-a425-9371f4014f63" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ForPageFactory/FieldName.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/GoogleAndYandexTestLearning/GooglePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/GoogleAndYandexTestLearning/YandexPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Helpers/PageUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Task1_3/MarketBeforeSearch.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ForPageFactory/Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ForPageFactory/Page.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Helpers/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Helpers/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PagesForTask11/GoogleAfterSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PagesForTask1_1/GoogleAfterSearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PagesForTask11/GoogleBeforeSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PagesForTask1_1/GoogleBeforeSearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PagesForTask11/GooglePageWithSearch.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PagesForTask11/PageFactoryGoogle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PagesForTask1_1/PageFactoryGoogle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PagesForTask12/OpenExchangeRates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PagesForTask1_2/OpenExchangeRates.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Steps/Steps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Steps/Steps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Task12Improved/GooglePageWithSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Task1_2Improved/GooglePageWithSearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Task12Improved/OpenBankPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Task1_2Improved/OpenBankPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Task12Improved/OpenBankPagePF.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Task1_2Improved/OpenBankPagePF.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Task13/MarketAfterSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Task1_3/MarketAfterSearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Task13/MarketBeforeSearch.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Task13/YandexBeforeMarket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Task1_3/YandexBeforeMarket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/google/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/google/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Task1_3/MarketBeforeSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Task1_3/MarketBeforeSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Task1_3/YandexBeforeMarket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Task1_3/YandexBeforeMarket.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/google/Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/google/Tests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ForPageFactory/Page.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ForPageFactory/Page.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Helpers/Constants.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Helpers/Constants.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/PagesForTask11/GoogleAfterSearch.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/PagesForTask11/GoogleBeforeSearch.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/PagesForTask11/GooglePageWithSearch.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/PagesForTask11/PageFactoryGoogle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/PagesForTask12/OpenExchangeRates.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Steps/Steps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Steps/Steps.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Task12Improved/GooglePageWithSearch.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Task12Improved/OpenBankPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Task12Improved/OpenBankPagePF.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Task13/MarketAfterSearch.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Task13/MarketBeforeSearch.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Task13/YandexBeforeMarket.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/driver/WebDriverManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/driver/WebDriverManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/google/BaseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/google/BaseTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/google/Tests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/google/Tests.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -99,7 +70,7 @@
       <command value="mvn allure:serve" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Tests.yandexMarketForTask13">
+  <component name="RunManager" selected="JUnit.Tests.yandexMarketForTask14">
     <configuration name="Tests.GoogleAndYandexTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AduyskiyTasks" />
       <extension name="coverage">
@@ -168,22 +139,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tests.openERTestWithSteps" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AduyskiyTasks" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.google.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.google" />
-      <option name="MAIN_CLASS_NAME" value="com.google.Tests" />
-      <option name="METHOD_NAME" value="openERTestWithSteps" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Tests.wikiCheckTestPF" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="AduyskiyTasks" />
       <extension name="coverage">
@@ -241,23 +196,39 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Tests.yandexMarketForTask14" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AduyskiyTasks" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.google.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.google" />
+      <option name="MAIN_CLASS_NAME" value="com.google.Tests" />
+      <option name="METHOD_NAME" value="yandexMarketForTask14" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="JUnit.Tests.wikiCheckTestPF" />
       <item itemvalue="JUnit.Tests.wikiCheckTestPO" />
       <item itemvalue="JUnit.Tests.openERTestPO" />
       <item itemvalue="JUnit.Tests.openERTestImprovedPo" />
-      <item itemvalue="JUnit.Tests.openERTestWithSteps" />
       <item itemvalue="JUnit.Tests.openERTestWithSteps (1)" />
       <item itemvalue="JUnit.Tests.yandexMarketForTask13" />
       <item itemvalue="JUnit.Tests.GoogleAndYandexTest" />
+      <item itemvalue="JUnit.Tests.yandexMarketForTask14" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Tests.yandexMarketForTask14" />
         <item itemvalue="JUnit.Tests.yandexMarketForTask13" />
         <item itemvalue="JUnit.Tests.openERTestImprovedPo" />
         <item itemvalue="JUnit.Tests.GoogleAndYandexTest" />
         <item itemvalue="JUnit.Tests.openERTestWithSteps (1)" />
-        <item itemvalue="JUnit.Tests.openERTestWithSteps" />
       </list>
     </recent_temporary>
   </component>
@@ -353,22 +324,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="789" y="397" width="366" height="246" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1629997154003" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1630240572765">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1630330739482">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1630240572765" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1630240572765">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1630330739482" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1630330739482">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1630240572765" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1630240572765">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1630330739482" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1630330739482">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1630240572765" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1630240572765">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1630330739482" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1630330739482">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1630240572765" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1630330739482" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1629574172430">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

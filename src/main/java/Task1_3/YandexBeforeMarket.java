@@ -9,7 +9,7 @@ public class YandexBeforeMarket {
     protected WebDriver driver;
     private WebElement marketButton;
 
-    public YandexBeforeMarket(ChromeDriver driver) {
+    public YandexBeforeMarket(WebDriver driver) {
         this.driver = driver;
         this.marketButton = driver.findElement(By.xpath("//*[@data-id='market']"));
     }

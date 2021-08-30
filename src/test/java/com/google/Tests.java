@@ -1,10 +1,12 @@
 package com.google;
 
 import Helpers.Constants;
+import Helpers.PageUtils;
 import Task1_3.MarketAfterSearch;
 import Task1_3.MarketBeforeSearch;
 import Task1_3.YandexBeforeMarket;
 import org.junit.jupiter.api.Test;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.concurrent.TimeUnit;
@@ -132,9 +134,9 @@ public class Tests extends BaseTest {
         MarketBeforeSearch marketBeforeSearch = new MarketBeforeSearch(chromeDriver);
         steps.goToSmarts(marketBeforeSearch);
         Thread.sleep(6000);
-        steps.brandFilters(marketBeforeSearch);
-        Thread.sleep(6000);
         steps.setRange(marketBeforeSearch);
+        Thread.sleep(6000);
+        steps.brandFilters(marketBeforeSearch);
         Thread.sleep(3000);
         steps.checkBrandList(marketBeforeSearch);
     }

@@ -17,7 +17,7 @@ public class PageUtils {
     public static boolean isVisible (WebElement element) {
         return element.isDisplayed();
     }
-    private static void WaitUntilElementBeVisible(WebElement element){
+    public static void WaitUntilElementBeVisible(WebElement element){
         if (isVisible(element)) return;
         new WebDriverWait(WebDriverManager.getCurrentDriver(), Constants.DEFAULT_TIMEOUT)
                 .until(visibilityOf(element));

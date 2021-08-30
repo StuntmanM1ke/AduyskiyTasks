@@ -81,7 +81,7 @@ public class Steps {
     public void checkBrandList(MarketBeforeSearch marketBeforeSearch) throws InterruptedException {
         List<WebElement> results = marketBeforeSearch.getBrandList();
         for (WebElement result : results) {
-            Assertions.assertTrue(result.toString().contains(Constants.brandName), "В выборку попали не только " + Constants.brandName);
+            Assertions.assertTrue(result.getText().contains(Constants.brandName), "В выборку попали не только " + Constants.brandName);
         }
     }
 //    @Step("Шаг 1. Проверить ниличие имени; {name} ")

@@ -97,18 +97,28 @@ public class MarketBeforeSearch implements Page {
         showAll.click();
         WebElement brandField = driver.findElement(By.xpath("//*[@class='_1JYTt']"));
         brandField.sendKeys(brandName);
-        WebElement brandPoint = driver.findElement(By.xpath("//span[contains(text(), '"+ brandName + "') and @class='_1o8_r _17C4L']"));
-        Thread.sleep(3000);
-        brandPoint.click();
+        WebElement brandPoint = driver.findElement(By.xpath("//span[contains(text(), '" + brandName + "') and @class='_1o8_r _17C4L']"));
+        Thread.sleep(5000);
+        try {
+            brandPoint.click();
+        } catch (StaleElementReferenceException e){
+            brandPoint = driver.findElement(By.xpath("//span[contains(text(), '" + brandName.substring(1) + "') and @class='_1o8_r _17C4L']"));
+            brandPoint.click();
+        }
     }
 
     public List<WebElement> getBrandList() throws InterruptedException {
         List<WebElement> list = getResults();
         WebElement nextPage = driver.findElement(By.xpath("//a[contains(text(), 'Вперёд')]"));
-        while (nextPage.isDisplayed()){
-            nextPage.click();
-            Thread.sleep(3000);
-            list.addAll(getResults());
+        while (true){
+            try {
+                nextPage.click();
+                Thread.sleep(3000);
+                List<WebElement> newPage = getResults();
+                list.addAll(newPage);
+            } catch (StaleElementReferenceException e) {
+                break;
+                }
         }return list;
     }
 

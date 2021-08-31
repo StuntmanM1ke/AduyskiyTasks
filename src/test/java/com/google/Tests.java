@@ -1,15 +1,9 @@
 package com.google;
 
-import Helpers.Constants;
-import Helpers.PageUtils;
-import Task1_3.MarketAfterSearch;
-import Task1_3.MarketBeforeSearch;
-import Task1_3.YandexBeforeMarket;
+import Task1_3andTask1_4.MarketAfterSearch;
+import Task1_3andTask1_4.MarketBeforeSearch;
+import Task1_3andTask1_4.YandexBeforeMarket;
 import org.junit.jupiter.api.Test;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-
-import java.util.concurrent.TimeUnit;
 
 
 public class Tests extends BaseTest {

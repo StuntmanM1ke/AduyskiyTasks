@@ -1,11 +1,12 @@
 package Steps;
 
 import Helpers.Constants;
-import Task1_3.MarketAfterSearch;
-import Task1_3.MarketBeforeSearch;
-import Task1_3.YandexBeforeMarket;
+import Task1_3andTask1_4.MarketAfterSearch;
+import Task1_3andTask1_4.MarketBeforeSearch;
+import Task1_3andTask1_4.YandexBeforeMarket;
 import io.qameta.allure.Step;
 import org.junit.jupiter.api.Assertions;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
@@ -79,10 +80,20 @@ public class Steps {
 
     @Step("Шаг 7. Проверка списка")
     public void checkBrandList(MarketBeforeSearch marketBeforeSearch) throws InterruptedException {
+        boolean isListOk = true;
         List<WebElement> results = marketBeforeSearch.getBrandList();
-        for (WebElement result : results) {
-            Assertions.assertTrue(result.getText().contains(Constants.brandName), "В выборку попали не только " + Constants.brandName);
+        System.out.println(results.size());
+        try {
+            for (WebElement result : results) {
+                if (!result.getText().contains(Constants.brandName) && !result.getText().contains(Constants.registerTransformer(Constants.brandName)) && !result.getText().contains(Constants.brandName.toUpperCase())) {
+                    isListOk = false;
+                }
+            }
+        } catch (StaleElementReferenceException e) {
+            System.out.println("тут");
+
         }
+        Assertions.assertTrue(isListOk, "В выборку попали не только " + Constants.brandName);
     }
 //    @Step("Шаг 1. Проверить ниличие имени; {name} ")
 //    public void checkContainsName(List<Map<String, Object>> ResultSearch, String name, WebDriver webDriver) {

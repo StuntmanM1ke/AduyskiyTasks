@@ -1,16 +1,11 @@
-package Task1_3;
+package Task1_3andTask1_4;
 
 import ForPageFactory.FieldName;
 import ForPageFactory.Page;
-import Helpers.Constants;
-import Helpers.PageUtils;
 import org.openqa.selenium.*;
-import org.openqa.selenium.interactions.Locatable;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
 
 public class MarketBeforeSearch implements Page {
     protected WebDriver driver;
@@ -102,8 +97,8 @@ public class MarketBeforeSearch implements Page {
         try {
             brandPoint.click();
         } catch (StaleElementReferenceException e){
-            brandPoint = driver.findElement(By.xpath("//span[contains(text(), '" + brandName.substring(1) + "') and @class='_1o8_r _17C4L']"));
-            brandPoint.click();
+            brandPoint = driver.findElement(By.xpath("//span[contains(text(), '" + brandName.substring(1) + "') and @class='_1o8_r _17C4L']"));  // Костыль для обхода StaleElementReferenceException.
+            brandPoint.click(); // для некоторых брендов, например Apple и BQ не срабатывал клик после сортировки производителей
         }
     }
 
